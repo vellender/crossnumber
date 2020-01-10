@@ -93,6 +93,14 @@ def fol(n):
             break
     return tuple(l)
 
+def friendlyol(n):
+    """Friendly (divisible by its digit sum) numbers of length n"""
+    l=[]
+    for a in range(10**(n-1),10**n):
+        if isFriendly(a):
+            l.append(a)
+    return tuple(l)
+
 
 """
 ******* FUNCTIONS REGARDING DIGITS *******
@@ -146,5 +154,25 @@ def isFriendly(n):
     else:
         return False
     
+def lcm(x,y):
+   """Lowest common multiple"""
+   if x>y:#choose the greater
+       g=x
+   else:
+       g=y
+   while(True):
+       if g%x==0 and g%y==0:
+           lcm=g
+           break
+       g+=1
+   return lcm    
+
+def gcf(x,y):
+    """Greatest common factor"""
+    while(y):
+       x,y=y,x%y
+    return x
+    
+
 
 
