@@ -172,7 +172,19 @@ def gcf(x,y):
     while(y):
        x,y=y,x%y
     return x
+
+"""
+******* FUNCTIONS FOR NOTE-TAKING *******
+"""    
+def conclusion(m):
+    from termcolor import colored
+    print(colored('***CONCLUSION***: ', 'red'), colored(str(m), 'blue'))
+
+def digits(m):
+    from termcolor import colored
+    print(colored('***DIGITS***: ', 'red'), colored(str(m), 'blue'))
     
-
-
+def assumption(m):
+    from termcolor import colored
+    print(colored('***ASSUMPTION***: ', 'red'), colored(str(m), 'blue'))
 
