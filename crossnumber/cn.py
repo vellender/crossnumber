@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
+
 """
 _________                                                   ______              
 __  ____/_____________________________________  ________ ______  /______________
@@ -11,8 +12,6 @@ A collection of functions which may be of use when solving crossnumber puzzles.
 Author: Adam Vellender
 dev@vellender.com
 """
-
-
 
 """
 GENERATORS OF TUPLES OF INTEGERS WITH CERTAIN PROPERTIES
@@ -208,6 +207,24 @@ def gcf(x,y):
     return x
 
 """
+FACTORISING
+"""
+
+def factors(x):
+   """Factors""" 
+   out=[]
+   for i in range(1, x + 1):
+       if x % i == 0:
+           out.append(i)
+   return tuple(out)
+
+from sympy.ntheory import factorint as primeFactorisation
+from sympy.ntheory import primefactors as pf
+
+
+
+
+"""
 ******* FUNCTIONS FOR NOTE-TAKING *******
 """    
 def conclusion(m):
@@ -221,4 +238,13 @@ def digits(m):
 def assumption(m):
     from termcolor import colored
     print(colored('***ASSUMPTION***: ', 'red'), colored(str(m), 'blue'))
+    
+def consider(m):
+    from termcolor import colored
+    print(colored('***CONSIDER***: ', 'green'), colored(str(m), 'green'))
+    
+def note(m):
+    from termcolor import colored
+    print(colored('***NOTE***: ', 'green'), colored(str(m), 'green'))    
+         
 
