@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Crossnumber documentation &mdash; crossnumber  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> crossnumber
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Crossnumber documentation</a></li>
+<li><a class="reference internal" href="#what-is-crossnumber">What is “crossnumber”?</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#generating-special-numbers">Generating special numbers</a></li>
+<li><a class="reference internal" href="#applying-simple-constraints">Applying simple constraints</a></li>
+<li><a class="reference internal" href="#digit-sum-and-product-anagrams-and-reversals">Digit sum and product, anagrams, and reversals.</a></li>
+<li><a class="reference internal" href="#factors">Factors</a></li>
+<li><a class="reference internal" href="#annotation">Annotation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#list-of-functions">List of functions</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">crossnumber</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Crossnumber documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="crossnumber-documentation">
+<h1>Crossnumber documentation<a class="headerlink" href="#crossnumber-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the documentation for the <cite>crossnumber</cite> Python3 package.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="what-is-crossnumber">
+<h1>What is “crossnumber”?<a class="headerlink" href="#what-is-crossnumber" title="Permalink to this headline">¶</a></h1>
+<p>Crossnumber is a collection of functions for the Python3 programming language that can be useful in helping solve crossnumbers. The functions are fairly simple but can speed up solving by making it easier to generate lists of special numbers, check factors, digit sums, and so on.</p>
+<p>If you’re not familiar with Python, it’s a programming language that places emphasis on ease of learning; the syntax is straightforward. I’d recommend <a class="reference external" href="https://www.codecademy.com">Codecademy</a> as a good beginner’s tutorial although there are very many others available online.</p>
+<p>It probably goes without saying that the main objective in solving puzzles should be enjoyment, so computer use should probably be fairly minimal. Brute-forcing your way to a puzzle’s solution is not fun, but then nor perhaps is manually looking through a list of four-digit prime numbers to find ones with an even first digit and a third digit that’s either 8 or 9! The functions in <cite>crossnumber</cite>, used sparingly, can help with some of that kind of heavy lifting.</p>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>You’ll need a working Python installation. If you’ve never used Python, installing <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a> might be the easiest way on most platforms.</p>
+<p>The <cite>crossnumber</cite> Python package can then be installed using the <code class="docutils literal notranslate"><span class="pre">pip</span></code> package manager:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install crossnumber
+</pre></div>
+</div>
+<p>If you’re new to Python and unfamiliar with pip, search online for how to use it, although assuming you have Python installed, it should be as simple as typing the above into a command prompt.</p>
+</div>
+<div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>To import all of <cite>crossnumber</cite>’s functions into your Python session, run</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">crossnumber</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Perhaps it’s worth noting here that importing all functions from a package like this (using an asterisk) is <a class="reference external" href="https://www.geeksforgeeks.org/why-import-star-in-python-is-a-bad-idea/">generally a bad idea</a>, but for something non-vital like solving a crossnumber it’s fine.</p>
+<p>After this command has been executed, you’ll be able to use all of the <cite>crossnumber</cite> functions.</p>
+<p>A complete list of functions is available in the <a class="reference internal" href="#list-of-functions"><span class="std std-ref">list of functions</span></a> near the end of this page, but this section of the documentation is intended to give you an idea of how you can use them.</p>
+<div class="section" id="generating-special-numbers">
+<h2>Generating special numbers<a class="headerlink" href="#generating-special-numbers" title="Permalink to this headline">¶</a></h2>
+<p>Let’s start with the basics. When solving crossnumbers you quite often need to refer to a list of a certain type of number of certain length. For instance, primes of length 2, triangular numbers of length 3, Fibonacci numbers of length 4, and so on. The <cite>crossnumber</cite> package has functions to generate these, for instance:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will output a <a class="reference external" href="https://www.w3schools.com/python/python_tuples.asp">tuple</a> containing the primes of length 2:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">83</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">97</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">pol</span></code> here stands for <cite>primes of length</cite>. Other functions to generate special types of number of certain length include:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">sol(n)</span></code> for square numbers of length <code class="docutils literal notranslate"><span class="pre">n</span></code>;</li>
+<li><code class="docutils literal notranslate"><span class="pre">tol(n)</span></code> for triangular numbers of length <code class="docutils literal notranslate"><span class="pre">n</span></code>;</li>
+<li><code class="docutils literal notranslate"><span class="pre">fol(n)</span></code> for Fibonacci numbers of length <code class="docutils literal notranslate"><span class="pre">n</span></code>;</li>
+<li><code class="docutils literal notranslate"><span class="pre">col(n)</span></code> for cube numbers of length <code class="docutils literal notranslate"><span class="pre">n</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iol(n)</span></code> for all integers of length <code class="docutils literal notranslate"><span class="pre">n</span></code>.</li>
+</ul>
+<p>These can be simply combined; if you needed a list of all primes under 1000 for instance, <code class="docutils literal notranslate"><span class="pre">pol(1)+pol(2)+pol(3)</span></code> would do the job.</p>
+</div>
+<div class="section" id="applying-simple-constraints">
+<h2>Applying simple constraints<a class="headerlink" href="#applying-simple-constraints" title="Permalink to this headline">¶</a></h2>
+<p>Suppose you’re solving a puzzle where you have a four-digit prime whose second digit you know to be 4 and third digit you know to be 7. You can simply ask Python to run through all primes of length 4 and print just those matching those conditions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">pol</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">4</span> <span class="ow">and</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">7</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>which will output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1471</span>
+<span class="mi">2473</span>
+<span class="mi">2477</span>
+<span class="mi">5471</span>
+<span class="mi">5477</span>
+<span class="mi">5479</span>
+<span class="mi">6473</span>
+<span class="mi">7477</span>
+<span class="mi">9473</span>
+<span class="mi">9479</span>
+</pre></div>
+</div>
+<p>Here we’ve used the <cite>crossnumber</cite> function <code class="docutils literal notranslate"><span class="pre">nthDigit(a,b)</span></code> which returns the <code class="docutils literal notranslate"><span class="pre">b</span></code>-th digit of the integer <code class="docutils literal notranslate"><span class="pre">a</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">nthDigit(42,2)</span></code> will return <code class="docutils literal notranslate"><span class="pre">2</span></code>).</p>
+<p>As another example, suppose we’re looking for a three-digit Fibonacci number whose middle digit is the final digit of a three-digit square. We could get a list of such pairs via</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">fol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+   <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">sol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+      <span class="k">if</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="n">nthDigit</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+         <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Entirely equivalently, there’s a <code class="docutils literal notranslate"><span class="pre">match</span></code> function, which can save a little bit of typing, with syntax like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">fol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+   <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">sol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+      <span class="k">if</span> <span class="n">match</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+         <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Incidentally, the output for either of the above blocks of code looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">144</span> <span class="mi">144</span>
+<span class="mi">144</span> <span class="mi">324</span>
+<span class="mi">144</span> <span class="mi">484</span>
+<span class="mi">144</span> <span class="mi">784</span>
+<span class="mi">610</span> <span class="mi">121</span>
+<span class="mi">610</span> <span class="mi">361</span>
+<span class="mi">610</span> <span class="mi">441</span>
+<span class="mi">610</span> <span class="mi">841</span>
+<span class="mi">610</span> <span class="mi">961</span>
+</pre></div>
+</div>
+<p>Of course, in real puzzles, you often have partial information about a digit. For instance, suppose we’re looking for a four-digit triangular number with second digit either 2 or 5, and third digit 7. We’ll just have to adjust our for-loop to deal with such cases:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">tol</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="ow">and</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">7</span><span class="p">:</span>
+     <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>which will output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1275</span>
+<span class="mi">2278</span>
+<span class="mi">3570</span>
+<span class="mi">4278</span>
+</pre></div>
+</div>
+<p>Other things that might be worth mentioning here, especially for those not too familiar with Python, include that you can check divisibility easily. Suppose you’re looking for a two-digit integer that’s triangular but not a multiple of 3. Python can give you the remainder of an integer, <code class="docutils literal notranslate"><span class="pre">a</span></code> say, when divided by 3 via the command <code class="docutils literal notranslate"><span class="pre">a%3</span></code>. If <code class="docutils literal notranslate"><span class="pre">a</span></code> is not a multiple of 3, then this will be not equal to 0 (in Python’s syntax: <code class="docutils literal notranslate"><span class="pre">a%3</span> <span class="pre">!=</span> <span class="pre">0</span></code>). Thus</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">tol</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">a</span><span class="o">%</span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will do the described search for you.</p>
+<p>Finally, perhaps it’s worth mentioning that you can use <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>, as well as just <code class="docutils literal notranslate"><span class="pre">in</span></code>, in searches.</p>
+</div>
+<div class="section" id="digit-sum-and-product-anagrams-and-reversals">
+<h2>Digit sum and product, anagrams, and reversals.<a class="headerlink" href="#digit-sum-and-product-anagrams-and-reversals" title="Permalink to this headline">¶</a></h2>
+<p>Common types of clue in crossnumbers include using things like digit sums, digit products, anagrams/jumbles, reversals of integers, and so on. There are functions in <cite>crossnumber</cite> for all of these.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">digitSum(n)</span></code> will return the digit sum of <code class="docutils literal notranslate"><span class="pre">n</span></code>;</li>
+<li><code class="docutils literal notranslate"><span class="pre">digitProduct(n)</span></code> will return the digit product of <code class="docutils literal notranslate"><span class="pre">n</span></code>;</li>
+<li><code class="docutils literal notranslate"><span class="pre">isAnagram(m,n)</span></code> will return <code class="docutils literal notranslate"><span class="pre">True</span></code> if the integers <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> are anagrams of each other and <code class="docutils literal notranslate"><span class="pre">False</span></code> if not;</li>
+<li><code class="docutils literal notranslate"><span class="pre">rev(n)</span></code> will return the reverse of an integer, e.g. <code class="docutils literal notranslate"><span class="pre">rev(123)</span></code> will return <code class="docutils literal notranslate"><span class="pre">321</span></code>.</li>
+</ul>
+<p>As an example, suppose we’re looking for a three-digit prime with middle digit 3 and digit sum 11:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">pol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">3</span> <span class="ow">and</span> <span class="n">digitSum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">==</span><span class="mi">11</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The above returns one possibility: <code class="docutils literal notranslate"><span class="pre">137</span></code>.</p>
+<p>Another example: suppose we’re looking for a four-digit prime number whose reverse is a four-digit triangular number. Then</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">pol</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">rev</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">in</span> <span class="n">tol</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will do the job for us, giving us four candidates:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1171</span>
+<span class="mi">1801</span>
+<span class="mi">5563</span>
+<span class="mi">8731</span>
+</pre></div>
+</div>
+<p>As a final example in this section, suppose we were looking for two three-digit numbers, one square and one prime, that are anagrams of each other. Perhaps we know that the square ends in 4. The following should give us all possible candidate pairs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">sol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+   <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">pol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+      <span class="k">if</span> <span class="n">isAnagram</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="ow">and</span> <span class="n">nthDigit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="mi">4</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As luck would have it, there’s only one such possibility:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">784</span> <span class="mi">487</span>
+</pre></div>
+</div>
+<p>so our square is 784 and our prime is 487.</p>
+</div>
+<div class="section" id="factors">
+<h2>Factors<a class="headerlink" href="#factors" title="Permalink to this headline">¶</a></h2>
+<p>Some puzzles require you to use information about factors, or the number of factors, or prime factors, of an integer. There are many nice mathematical results concerning these, but sometimes it’s useful to be able to use Python to help.</p>
+<ul class="simple">
+<li>The function <code class="docutils literal notranslate"><span class="pre">factors</span></code> outputs a tuple of all factors of an integer (including 1 and the integer itself). For instance, <code class="docutils literal notranslate"><span class="pre">factors(24)</span></code> will return <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">8,</span> <span class="pre">12,</span> <span class="pre">24)</span></code>.</li>
+<li>The function <code class="docutils literal notranslate"><span class="pre">pf</span></code> outputs a tuple of all <cite>prime</cite> factors of an integer. For instance, <code class="docutils literal notranslate"><span class="pre">pf(24)</span></code> will return <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">3)</span></code>.</li>
+<li>The function <code class="docutils literal notranslate"><span class="pre">primeFactorisation</span></code> outputs a Python dictionary, each entry of which is of the format <code class="docutils literal notranslate"><span class="pre">factor:</span> <span class="pre">exponent</span></code>. For instance, <code class="docutils literal notranslate"><span class="pre">primeFactorisation(24)</span></code> will return <code class="docutils literal notranslate"><span class="pre">{2:</span> <span class="pre">3,</span> <span class="pre">3:</span> <span class="pre">1}</span></code>.</li>
+</ul>
+<p>If you want to count how many factors an integer <code class="docutils literal notranslate"><span class="pre">n</span></code> has, just use Python’s <code class="docutils literal notranslate"><span class="pre">len</span></code> command. As an example, suppose you’re looking for a three-digit triangular number with exactly six distinct factors. Then</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">tol</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">factors</span><span class="p">(</span><span class="n">a</span><span class="p">))</span><span class="o">==</span><span class="mi">6</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">factors</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>will output</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">153</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">153</span><span class="p">)</span>
+<span class="mi">171</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">171</span><span class="p">)</span>
+<span class="mi">325</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">325</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here, I’ve used <code class="docutils literal notranslate"><span class="pre">print(a,</span> <span class="pre">factors(a))</span></code> to tell Python to print not only the triangular numbers, but also the list of factors.</p>
+</div>
+<div class="section" id="annotation">
+<h2>Annotation<a class="headerlink" href="#annotation" title="Permalink to this headline">¶</a></h2>
+<p>It’s frustrating when you realise you’ve made a mistake when solving a crossnumber. You’ve got to retrace your steps and figure out where the error was. If you’re not making some sort of set of notes, this can be tortuous and you end up being back at square one. For this reason, <code class="docutils literal notranslate"><span class="pre">crossnumber</span></code> includes a few note-taking functions, so that chunks of code can be signposted with what you’re investigating, what you conclude, and so on.</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">note(&quot;Your</span> <span class="pre">text</span> <span class="pre">here&quot;)</span></code> to make notes. This will output <code class="docutils literal notranslate"><span class="pre">***NOTE***:</span> <span class="pre">Your</span> <span class="pre">text</span> <span class="pre">here</span></code> in red.</p>
+<p>Similarly, there are functions <code class="docutils literal notranslate"><span class="pre">consider</span></code>, <code class="docutils literal notranslate"><span class="pre">assumptions</span></code>, <code class="docutils literal notranslate"><span class="pre">digits</span></code>, and <code class="docutils literal notranslate"><span class="pre">conclusion</span></code> that do the same. I find them useful sometimes e.g. I might note <code class="docutils literal notranslate"><span class="pre">consider(&quot;12</span> <span class="pre">across&quot;)</span></code>, and if I conclude the final digit is 3, I’d then write <code class="docutils literal notranslate"><span class="pre">digits(&quot;Final</span> <span class="pre">digit</span> <span class="pre">of</span> <span class="pre">12A</span> <span class="pre">is</span> <span class="pre">3&quot;)</span></code>.</p>
+</div>
+</div>
+<div class="section" id="list-of-functions">
+<h1>List of functions<a class="headerlink" href="#list-of-functions" title="Permalink to this headline">¶</a></h1>
+<p>Here is a comprehensive list of functions in <cite>crossnumber</cite>:</p>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Crossnumber functions list</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">primes(n)</span></code></td>
+<td>Returns tuple of all primes strictly less than <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pol(n)</span></code></td>
+<td>Returns tuple of all primes of length <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">sol(n)</span></code></td>
+<td>Returns tuple of all squares of length <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">col(n)</span></code></td>
+<td>Returns tuple of all cubes of length <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">tol(n)</span></code></td>
+<td>Returns tuple of all triangular numbers of length <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">iol(n)</span></code></td>
+<td>Returns tuple of all integers of length <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">fibonacci(n)</span></code></td>
+<td>Returns tuple of all Fibonacci numbers strictly less than <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">fol(n)</span></code></td>
+<td>Returns tuple of all Fibonacci numbers of length <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">friendlyol(n)</span></code></td>
+<td>Returns tuple of all ‘friendly’ numbers (integers divisible by their digit sum)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">digitSum(n)</span></code></td>
+<td>Returns sum of the digits in <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">digitProduct(n)</span></code></td>
+<td>Returns product of the digits in <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">isAnagram(m,n)</span></code></td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> are anagrams of each other and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">nthDigit(n,d)</span></code></td>
+<td>Returns the <cite>d</cite>-th digit of <cite>n</cite></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">match(n,a,m,b)</span></code></td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> is the <code class="docutils literal notranslate"><span class="pre">a</span></code>-th digit of <code class="docutils literal notranslate"><span class="pre">n</span></code> is the same as the <code class="docutils literal notranslate"><span class="pre">b</span></code>-th digit of <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">isLength(n,l)</span></code></td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the integer <code class="docutils literal notranslate"><span class="pre">n</span></code> is of length <code class="docutils literal notranslate"><span class="pre">l</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">rev(n)</span></code></td>
+<td>Returns the digit reversal of <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">isFriendly(n)</span></code></td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the integer <code class="docutils literal notranslate"><span class="pre">n</span></code> is ‘friendly’ (see description of <code class="docutils literal notranslate"><span class="pre">fol</span></code>) and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">lcm(x,y)</span></code></td>
+<td>Returns the lowest common multiple of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">gcf(x,y)</span></code></td>
+<td>Returns the greatest common factor of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">factors(n)</span></code></td>
+<td>Returns a tuple of the factors of <code class="docutils literal notranslate"><span class="pre">n</span></code>, including 1 and <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">pf(n)</span></code></td>
+<td>Returns a tuple of the distinct prime factors of <code class="docutils literal notranslate"><span class="pre">n</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">primeFactorisation(n)</span></code></td>
+<td>Returns a dictionary detailing the prime factorisation of <code class="docutils literal notranslate"><span class="pre">n</span></code>. Each entry is of the format <code class="docutils literal notranslate"><span class="pre">factor:</span> <span class="pre">exponent</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">note('Message')</span></code></td>
+<td>Note-taking function, outputs <code class="docutils literal notranslate"><span class="pre">***NOTE***:</span> <span class="pre">Message</span></code> to the console</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">conclusion('Message')</span></code></td>
+<td>Note-taking function, outputs <code class="docutils literal notranslate"><span class="pre">***CONCLUSION***:</span> <span class="pre">Message</span></code> to the console</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">assumption('Message')</span></code></td>
+<td>Note-taking function, outputs <code class="docutils literal notranslate"><span class="pre">***ASSUMPTION***:</span> <span class="pre">Message</span></code> to the console</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">consider('Message')</span></code></td>
+<td>Note-taking function, outputs <code class="docutils literal notranslate"><span class="pre">***CONSIDER***:</span> <span class="pre">Message</span></code> to the console</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">digits('Message')</span></code></td>
+<td>Note-taking function, outputs <code class="docutils literal notranslate"><span class="pre">***DIGITS***:</span> <span class="pre">Message</span></code> to the console</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Adam Vellender.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

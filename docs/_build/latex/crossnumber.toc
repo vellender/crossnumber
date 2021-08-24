@@ -1,0 +1,10 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}What is “crossnumber”?}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Installation}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Usage}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Generating special numbers}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Applying simple constraints}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Digit sum and product, anagrams, and reversals.}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Factors}{10}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Annotation}{10}{section.3.5}%
+\contentsline {chapter}{\numberline {4}List of functions}{13}{chapter.4}%
