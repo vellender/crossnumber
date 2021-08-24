@@ -25,7 +25,7 @@ It probably goes without saying that the main objective in solving puzzles shoul
 Installation
 ==================
 
-You'll need a working Python installation. If you've never used Python, installing `Anaconda <https://www.anaconda.com/products/individual>`_ might be the easiest way on most platforms.
+You'll need a working Python installation. If you've never used Python, installing `Anaconda <https://www.anaconda.com/products/individual>`_ might be the easiest way on most platforms, which comes with Spyder, a good user-friendly front-end for Python.
 
 The `crossnumber` Python package can then be installed using the ``pip`` package manager:
 
