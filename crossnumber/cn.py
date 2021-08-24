@@ -57,6 +57,13 @@ def tol(n):
     import numpy as np
     return tuple([int(float(n*(n+1))/2) for n in range(int(np.ceil(.5*(-1+np.sqrt(1+8*10**(n-1))))),int(np.ceil(.5*(-1+np.sqrt(1+8*10**n)))))])
 
+######## Integers ########
+def iol(n):
+    """All integers of length n"""
+    if not (type(n)==int and n>0):
+        raise ValueError('Argument must be a positive integer')
+    return tuple(range(10**(n-1),10**n))
+
 ######## Fibonacci numbers ########
 def _fib(n):
     """Private function: returns (F(n), F(n+1)) (fast algorithm)"""
@@ -150,6 +157,12 @@ def nthDigit(n,d):
         raise ValueError('Argument must be a positive integer')
     return int(str(n)[d-1])
 
+def match(n,a,m,b):
+    if nthDigit(n,a)==nthDigit(m,b):
+        return True
+    else:
+        return False
+
 def isLength(n,l):
     """Returns True only if n is an integer of length l"""
     if not (type(n)==int and n>0):
@@ -210,16 +223,14 @@ def gcf(x,y):
 FACTORISING
 """
 
-def factors(x):
-   """Factors""" 
-   out=[]
-   for i in range(1, x + 1):
-       if x % i == 0:
-           out.append(i)
-   return tuple(out)
+`
 
-from sympy.ntheory import factorint as primeFactorisation
-from sympy.ntheory import primefactors as pf
+from sympy.ntheory import factorint as "
+
+def pf(n):
+    """List of prime factors"""
+    from sympy.ntheory import primefactors
+    return tuple(primefactors(n))
 
 
 
