@@ -223,9 +223,9 @@ def gcf(x,y):
 FACTORISING
 """
 
-`
 
-from sympy.ntheory import factorint as "
+
+from sympy.ntheory import factorint as primeFactorisation
 
 def pf(n):
     """List of prime factors"""
