@@ -230,16 +230,15 @@ def gcf(x,y):
 FACTORISING
 """
 from sympy.ntheory import factorint as primeFactorisation
-from functools import reduce
 
 def pf(n):
     """List of prime factors"""
     from sympy.ntheory import primefactors
     return tuple(primefactors(n))
 
-def factors(n):    
-    return tuple(set(reduce(list.__add__, 
-                ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0))))
+def factors(n):
+    from sympy import divisors
+    return tuple(divisors(n))
 
 
 """
