@@ -291,4 +291,6 @@ Here is a comprehensive list of functions in `crossnumber`:
    "``assumption('Message')``","Note-taking function, outputs ``***ASSUMPTION***: Message`` to the console"
    "``consider('Message')``","Note-taking function, outputs ``***CONSIDER***: Message`` to the console"
    "``digits('Message')``","Note-taking function, outputs ``***DIGITS***: Message`` to the console"
+   "``contradiction('Message')``","Note-taking function, outputs ``***CONTRADICTION***: Message`` to the console"
+   "``msg('Title','Message')``","Note-taking function, outputs ``***TITLE***: Message`` to the console"
    
