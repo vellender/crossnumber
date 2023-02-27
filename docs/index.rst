@@ -278,6 +278,7 @@ Here is a comprehensive list of functions in `crossnumber`:
    "``nthDigit(n,d)``","Returns the `d`-th digit of `n`"
    "``match(n,a,m,b)``","Returns ``True`` is the ``a``-th digit of ``n`` is the same as the ``b``-th digit of ``m`` and ``False`` otherwise"
    "``isLength(n,l)``","Returns ``True`` if the integer ``n`` is of length ``l`` and ``False`` otherwise"
+   "``isDistinct(l)``","Returns ``True`` if the list ``l`` contains no duplicates and ``False`` otherwise"
    "``rev(n)``","Returns the digit reversal of ``n``"
    "``isFriendly(n)``","Returns ``True`` if the integer ``n`` is 'friendly' (see description of ``fol``) and ``False`` otherwise"
    "``lcm(x,y)``","Returns the lowest common multiple of ``x`` and ``y``"
