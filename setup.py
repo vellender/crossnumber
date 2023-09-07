@@ -3,7 +3,7 @@ setup(
   name = 'crossnumber',
   packages = ['crossnumber'], # this must be the same as the name above
   install_requires=['numpy', 'termcolor','sympy'],
-  version = '0.7.0',
+  version = '0.7.1',
   description = 'A collection of Python functions which may be of use when solving crossnumber puzzles.',
   long_description='A collection of Python functions which may be of use when solving crossnumber puzzles.',
   author = 'Adam Vellender',

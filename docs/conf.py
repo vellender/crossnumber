@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'crossnumber'
-copyright = '2021, Adam Vellender'
+copyright = '2023, Adam Vellender'
 author = 'Adam Vellender'
 html_theme = 'sphinx_rtd_theme'
 

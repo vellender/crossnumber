@@ -269,7 +269,7 @@ Sometimes, the numbers must pairwise be taken modulo some integer (by default 26
 
 For instance ``lettersToNums('PACE')`` will output ``'16010305'``.
 
-This function has an optional second argument to add spacing to increase readability (which defaults to ``False``). Toggling it to true adds spacing: ``lettersToNums('PACE',True)`` will output ``'16 01 03 05'``.
+This function has an optional second argument to add spacing to increase readability (which defaults to ``False``). Toggling it to ``True`` adds spacing: ``lettersToNums('PACE',True)`` will output ``'16 01 03 05'``.
 
 
 List of functions
