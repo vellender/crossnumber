@@ -227,6 +227,62 @@ def gcf(x,y):
     return x
 
 """
+LETTER TO NUMBER TRANSLATION
+"""
+def singleNumToLetter(n):
+    """Takes a single natural number less than 26 and returns correspondingly 
+    positioned letter (e.g. numToLetter(5) returns E. Returns "?" if input>26"""
+    if 1 <= n <= 26:
+        return chr(64 + n) #'A' is ASCII 65
+    else:
+        return "?"
+    
+def numsToLetters(n,mod=26):
+    """Takes a STRING of integers e.g. 092905, splits into 09 03 05 and returns
+    correspondingly positioned letters modulo "mod" (default 26). 
+    Needs a string of even length as input"""
+    if len(str(n))%2==1:
+        return ""
+    else: 
+        out=[]
+        cursor=0
+        for i in range(0, len(str(n)), 2):
+            pair = int(str(n)[i:i+2])
+            if pair%mod!=0:
+                out.append(pair%mod)
+            else:
+                out.append(mod)#this means out is between 01 and mod (inclusive) rather than between 00 and mod-1
+        return "".join([singleNumToLetter(a) for a in out])
+    
+def singleLetterToNum(s):
+    """Takes a string s, outputs a STRING of their positions"""   
+    # Convert the string to uppercase to handle both uppercase and lowercase letters.
+    s = s.upper()
+   
+    # Initialize an empty list to store the results.
+    result = []  
+    # Iterate over each character in the string.
+    for char in s:
+        if 'A' <= char <= 'Z':
+            # Calculate the position in the alphabet (1 to 26) and format it as a two-digit string.
+            position = str(ord(char) - ord('A') + 1).zfill(2)
+            result.append(position)
+    
+    # Join the list of positions into a single string and return it.
+    return ''.join(result)
+
+def lettersToNums(s,spaced=False):
+    out=""
+    for a in s:
+        out+=singleLetterToNum(a)
+        if spaced:
+            out+=" "
+    if spaced:
+        return out[:-1]
+    else:    
+        return out
+
+"""
 FACTORISING
 """
 from sympy.ntheory import factorint as primeFactorisation

@@ -254,6 +254,24 @@ You can use ``note("Your text here")`` to make notes. This will output ``***NOTE
 
 Similarly, there are functions ``consider``, ``assumptions``, ``digits``, and ``conclusion`` that do the same. I find them useful sometimes e.g. I might note ``consider("12 across")``, and if I conclude the final digit is 3, I'd then write ``digits("Final digit of 12A is 3")``.
 
+Letters to numbers
+-----------
+
+Sometimes puzzles convert letters to numbers or vice-versa. The crossnumber package offers two useful functions to assist with this often boring process.
+
+* The function ``numsToLetters`` takes a string of numbers (I emphasise: string not integer; Python does not allow leading zeros in decimal integer literals), zero-padded if necessary, and returns the corresponding string. 
+
+For instance ``numsToLetters('010305')`` will output ``ACE``.
+
+Sometimes, the numbers must pairwise be taken modulo some integer (by default 26). In cases where the remainder is required modulo something other than 26, an optional modulo argument may be provided. For instance, ``numsToLetters('261515')`` will output ``ZOO``, but ``numsToLetters('261515',24)`` will return ``BOO`` (since 26mod24 = 2, i.e. the remainder, in less mathematical language).
+
+* The function ``lettersToNums`` does the reverse: it takes a string of letters and returns the corresponding alphabetical positions, as a string of integers, each zero-padded if necessary so that each letter generates a string portion of length two.
+
+For instance ``lettersToNums('PACE')`` will output ``'16010305'``.
+
+This function has an optional second argument to add spacing to increase readability (which defaults to ``False``). Toggling it to true adds spacing: ``lettersToNums('PACE',True)`` will output ``'16 01 03 05'``.
+
+
 List of functions
 ==================
 
@@ -286,6 +304,8 @@ Here is a comprehensive list of functions in `crossnumber`:
    "``factors(n)``","Returns a tuple of the factors of ``n``, including 1 and ``n``"
    "``pf(n)``","Returns a tuple of the distinct prime factors of ``n``"
    "``primeFactorisation(n)``","Returns a dictionary detailing the prime factorisation of ``n``. Each entry is of the format ``factor: exponent``"
+   "``numsToLetters('010203',mod)``","Converts an even-length string of digits to letters based on alphabetical position, modulo ``mod``, which is an optional argument that defaults to 26."
+   "``lettersToNums('LETTERS',spaced)``","Converts a string of letters to numbers based on alphabetical position. The function can take an optional argument ``spaced``, which defaults to ``False``. Switching it to ``True`` adds spacing to improve readability."
    "``note('Message')``","Note-taking function, outputs ``***NOTE***: Message`` to the console"
    "``conclusion('Message')``","Note-taking function, outputs ``***CONCLUSION***: Message`` to the console" 
    "``assumption('Message')``","Note-taking function, outputs ``***ASSUMPTION***: Message`` to the console"
